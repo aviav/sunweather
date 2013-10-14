@@ -18,9 +18,10 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/tobifrank/sunweather"
   gem.license = "MIT"
   gem.summary = %Q{Provides sunrise/sunset and weather info for given address.}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.description = %Q{Provides sunrise/sunset and weather info for given address.}
   gem.email = "tobifrank38@gmail.com"
   gem.authors = ["Tobi Frank"]
+  gem.executables = ["sunweather"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
