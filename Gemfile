@@ -14,4 +14,6 @@ group :development do
   gem "geocoder", "~> 1.1.8"
   gem "json", "~> 1.8.0"
   gem "capybara", "~> 2.1.0"
+  gem "xml-simple", "~> 1.1.2"
+  gem "awesome_print", "~> 1.1.0"
 end

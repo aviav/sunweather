@@ -1,4 +1,5 @@
 require_relative 'geo'
+require_relative 'sun'
 
 module Sunweather
 	class Runner
@@ -8,8 +9,11 @@ module Sunweather
 
 		def run
 			@geo = (ARGV[0] ? Geo.new(ARGV[0]) : Geo.new)
-			puts @geo.lat
-			puts @geo.lng
+			@sun = Sun.new(@geo.lat, @geo.lng)
+			puts @sun.start_of_dawn
+			puts @sun.sunrise
+			puts @sun.sunset
+			puts @sun.end_of_dusk
 		end
 	end
 end

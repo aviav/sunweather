@@ -4,7 +4,7 @@ module Sunweather
 	class Geo
 		attr_reader :data
 
-		def initialize (request = "Friedrich-von-Spee-Straße 10, Paderborn")
+		def initialize (request = ENV["FREEFORM_ADDRESS_QUERY"])
 			@data = Geocoder.search(request)
 		end
 
