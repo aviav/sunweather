@@ -1,6 +1,7 @@
+require_relative "../lib/geo"
 require_relative "../lib/sun"
 
-describe Sunweather::Sun, "after initializing with a string" do
+describe Sunweather::Sun, "after initializing with geocoordinates from default Geo object" do
   let(:geo) { Sunweather::Geo.new }
   let(:sun) { Sunweather::Sun.new(geo.lat, geo.lng) }
 
