@@ -1,6 +1,5 @@
 require 'xmlsimple'
 require 'open-uri'
-require 'awesome_print'
 require 'date'
 
 module Sunweather
@@ -52,6 +51,10 @@ module Sunweather
 
 		def end_of_dusk
 			Time.at(self.sunset.to_i + self.dawn_length.to_i)
+		end
+
+		def hours_minutes time
+			"#{time.hour}:#{time.minute+time.second/30}"
 		end
 	end
 end
