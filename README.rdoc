@@ -1,8 +1,26 @@
-= sunweather
+= Sunweather
 
-Description goes here.
+Sunweather
 
-== Contributing to sunweather
+Sunweather produces information about dawn and dusk times as well as temperature and weather information for a requested location.
+
+Thanks go to Ruby Geocoder for looking up geocoordinates from queries. Ruby Geocoder uses the Google Maps API as default.
+
+Thanks also go to Wunderground. Sunweather consults the Wunderground Astronomy and Conditions APIs for sunrise/sunset times and weather information.
+
+Finally, thanks go to EarthTools. EarthTools provides information about the durations of dawn and dusk.
+
+== Usage notes
+
+Sunweather is not yet in a state meant for use. However, you can provide a Wunderground API key as an environment variable, so that Ruby can access it via ENV["SUNWEATHER_DEV_WUNDERGROUND_API"]. If you do, a query on the console goes like 
+
+    $ sunweather Berlin
+    Dawn from 7:14 to 7:53.
+    Dusk from 15:56 to 16:35.
+    Temperature: 5.8°C, feels like 4.0°C.
+    Weather: Overcast, Winds from the wnw at 4.4 mph gusting to 6.4 mph, direction WNW.
+
+== Contributing to Sunweather
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
