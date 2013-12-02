@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "sunweather"
-  s.version = "0.3.2"
+  s.version = "0.3.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tobi Frank"]
-  s.date = "2013-12-01"
+  s.date = "2013-12-02"
   s.description = "Provides sunrise/sunset and weather info for given address."
   s.email = "tobifrank38@gmail.com"
   s.executables = ["sunweather"]
@@ -30,7 +30,6 @@ Gem::Specification.new do |s|
     "lib/data.rb",
     "lib/geo.rb",
     "lib/runner.rb",
-    "meditation",
     "spec/data_spec.rb",
     "spec/geo_spec.rb",
     "spec/spec_helper.rb",
