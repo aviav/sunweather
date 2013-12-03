@@ -5,16 +5,16 @@ module Sunweather
 	class Runner
 
 		def initialize
-		end
-
-		def data
 			@geo = (ARGV[0] ? Geo.new(ARGV[0]) : Geo.new)
 			@data = Data.new(@geo.lat, @geo.lng)
+		end
+
+		def cli_output
 			"Dawn from #{hours_minutes(@data.start_of_dawn)} to #{hours_minutes(@data.sunrise)}.\nDusk from #{hours_minutes(@data.sunset)} to #{hours_minutes(@data.end_of_dusk)}.\nTemperature: #{@data.temperature}°C, feels like #{@data.feels_like}°C.\nWeather: #{@data.conditions}, Winds #{@data.wind_speed.downcase}, direction #{@data.wind_direction}.\n"
 		end
 
-		def run
-			puts data
+		def run_cli
+			puts cli_output
 		end
 
 		def hours_minutes time

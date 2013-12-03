@@ -2,4 +2,4 @@
 require_relative '../lib/runner'
 
 runner = Sunweather::Runner.new
-runner.run
+runner.run_cli
