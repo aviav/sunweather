@@ -22,6 +22,8 @@ Jeweler::Tasks.new do |gem|
   gem.email = "tobifrank38@gmail.com"
   gem.authors = ["Tobi Frank"]
   gem.executables = ["sunweather"]
+  gem.add_dependency "geocoder"
+  gem.add_dependency "xml-simple"
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
