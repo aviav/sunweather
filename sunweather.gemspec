@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "sunweather"
-  s.version = "0.3.7"
+  s.version = "0.3.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tobi Frank"]
@@ -57,6 +57,8 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<capybara>, ["~> 2.1.0"])
       s.add_development_dependency(%q<xml-simple>, ["~> 1.1.2"])
       s.add_development_dependency(%q<awesome_print>, ["~> 1.1.0"])
+      s.add_runtime_dependency(%q<geocoder>, [">= 0"])
+      s.add_runtime_dependency(%q<xml-simple>, [">= 0"])
     else
       s.add_dependency(%q<rspec>, ["~> 2.8.0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
@@ -68,6 +70,8 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<capybara>, ["~> 2.1.0"])
       s.add_dependency(%q<xml-simple>, ["~> 1.1.2"])
       s.add_dependency(%q<awesome_print>, ["~> 1.1.0"])
+      s.add_dependency(%q<geocoder>, [">= 0"])
+      s.add_dependency(%q<xml-simple>, [">= 0"])
     end
   else
     s.add_dependency(%q<rspec>, ["~> 2.8.0"])
@@ -80,6 +84,8 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<capybara>, ["~> 2.1.0"])
     s.add_dependency(%q<xml-simple>, ["~> 1.1.2"])
     s.add_dependency(%q<awesome_print>, ["~> 1.1.0"])
+    s.add_dependency(%q<geocoder>, [">= 0"])
+    s.add_dependency(%q<xml-simple>, [">= 0"])
   end
 end
 
