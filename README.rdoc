@@ -32,6 +32,6 @@ Sunweather is not yet in a state meant for use. However, you can provide a Wunde
 
 == Copyright
 
-Copyright (c) 2013 Tobi Frank. See LICENSE.txt for
+Copyright (c) 2013 aviav. See LICENSE.txt for
 further details.
 
