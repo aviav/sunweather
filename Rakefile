@@ -15,12 +15,12 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "sunweather"
-  gem.homepage = "http://github.com/tobifrank/sunweather"
+  gem.homepage = "http://github.com/aviav/sunweather"
   gem.license = "MIT"
   gem.summary = %Q{Provides sunrise/sunset and weather info for given address.}
   gem.description = %Q{Provides sunrise/sunset and weather info for given address.}
-  gem.email = "tobifrank38@gmail.com"
-  gem.authors = ["Tobi Frank"]
+  gem.email = "8aviav@gmail.com"
+  gem.authors = ["aviav"]
   gem.executables = ["sunweather"]
   gem.add_dependency "geocoder"
   gem.add_dependency "xml-simple"
