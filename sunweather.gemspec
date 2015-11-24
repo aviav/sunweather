@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.version = "0.3.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Tobi Frank"]
+  s.authors = ["aviav"]
   s.date = "2013-12-03"
   s.description = "Provides sunrise/sunset and weather info for given address."
-  s.email = "tobifrank38@gmail.com"
+  s.email = "8aviav@gmail.com"
   s.executables = ["sunweather"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
